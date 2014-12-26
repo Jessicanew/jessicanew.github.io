@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <meta charset="utf-8">    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="public/css/style.css">
+        <link type="text/css" href="csshake.css">
+        <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>        
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script> 
+        <script type="text/javascript" src="public/js/app.js"></script>
+        <script type="text/javascript" src="routes/routing.js"></script>        
+        <title>Welcome to Weiwei's Website</title>
+    </head>
+    
+<body ng-app ="mainApp">
+    <div class="container">
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="navbar-inner">                
+                <div class="container">
+                    <a class="navbar-brand disabled">Wei</a>
+                    <div class="navbar-header navbar-right">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>                        
+                        <a class="navbar-text" href="#">Home</a>
+                        <a class="navbar-text" href="#/portfolio">Portfolios</a>
+                        <a class="navbar-text" href="#/moreAboutMe">About</a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <!--<form class="navbar-form" role="form">
+                        <div class="form-group">
+                          <input type="text" placeholder="Email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                          <input type="password" placeholder="Password" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-success">Sign in</button>
+                        </form>-->
+                    </div>                    
+                </div>                
+            </div>
+        </nav>
+        <div class="content" ui-view></div>
+    </div>
+    
+        
+   <!--<div class='container-fluid'>
+    <h2 class='page-header'>导航</h2>
+    <div class='navbar navbar-fixed-top'>
+        <div class='navbar-inner'>
+            <div class='container'>
+                <a class='brand' href='#'>Bootstrap</a>
+                <ul class='nav'>
+                    <li class='active'><a href='javascript:;'>首页</a></li>
+                    <li><a href='javascript:;'>新闻</a></li>
+                    <li><a href='javascript:;'>军事</a></li>
+                    <li><a href='javascript:;'>体育</a></li>
+                </ul>
+                <form class='navbar-search'>
+                    <input type='text' placeholder='输入搜索内容' class='search-query' />
+                </form>
+                <ul class='nav pull-right'>
+                    <li><a href='javascript:;'>登录</a></li>
+                    <li class='divider-vertical'></li>
+                    <li><a href='javascript:;'>注册</a></li>
+                </ul>
+            </div>
+        </div>
+    </div> 
+</div>
+<div style='height:1800px'></div>-->
+<!--这行代码用来演示高度的变化不会改变导航的位置-->
+    
+    </body>
+</html>
