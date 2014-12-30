@@ -15,10 +15,23 @@ h1 {
     color: rgba(0,0,0,0); 
 }
 
+h2 {
+    color: #464547; 
+}
+
+h4 {
+    text-align: center;
+}
+
 .container {
     height:100%; 
     min-height: 100%;
     margin: auto; 
+}
+
+.heading {
+    text-align: center;
+    padding-top: 40px;
 }
 
 .navbar-custom {
@@ -35,8 +48,8 @@ h1 {
 
 .navbar-text {
     /*color: rgb(61,61,61);*/
-    color: transparent;
-    text-shadow: 0px 2px 0px #fdb933; 
+    color: #fdb933; 
+    /*text-shadow: 0px 2px 0px #fdb933;*/ 
    /* background-image: url("/public/images/Wood_floor16.jpg");
     text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
     padding: 4px;*/ 
@@ -44,8 +57,14 @@ h1 {
 }
 
 a:hover, a.hover {
-    transform: rotate(4deg); 
-    text-decoration: none;    
+    transform: rotate(-6deg) scale(1.1); 
+    text-decoration: none; 
+    color: #fdb933; 
+}
+
+a:visited, a.visited {
+    text-decoration: none;
+    color: #fdb933;
 }
 
 .content {    
@@ -83,8 +102,10 @@ a:hover, a.hover {
 }
 
 .img-custom {
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
-    max-width: 200px;
+   /* box-shadow: 2px 2px 2px rgba(0,0,0,0.5);*/
+    width: 260px;
+    max-width: 260px;
+    
 }
 
 .text-about {
@@ -104,16 +125,32 @@ a:hover, a.hover {
 
 .table-cell {
   display: table-cell;
-  vertical-align: middle;
+  vertical-align: top;
+  align-content: center;
+  padding-top: 80px;
+}
+
+.skillCategory{
+    width: 150px;
+    height:150px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: orange;
 }
 
 .center-content {
   display: table;
-  margin: auto; font-size: 26px; color: #464547;
+  margin: auto; 
+  font-size: 26px; 
+  color: #464547; 
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .content-border{
-    border-bottom: 2px dashed #ffffff;    
+    border-top: 1px solid #ffffff; 
+    padding-left: 20px; 
+    padding-right: 20px; 
 }
 
 .contactMe {
@@ -128,4 +165,11 @@ a:hover, a.hover {
 .listStyle{
     list-style-type: disc; 
     list-style-position: inside;
+}
+
+.pfBlock {
+    min-height: 200px;
+    min-width: 200px;
+    border: 1px solid #ffffff;
+    border-collapse:collapse;
 }
