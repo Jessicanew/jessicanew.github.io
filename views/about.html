@@ -1,10 +1,28 @@
 <section id="about">
     <div class="container fill3 table-center">
         <div class="row table-cell">
-            <div class="center-content">
-                <span><img class="img-responsive img-custom" src="../public/images/me.gif"></img></span> 
-                <span class="contactMe"><h4>Weiwei <a href="mailto:ww01100110@gmail.com"> Email me</a></h4></span>
+            <div class="col-md-7">
+                <div class="center-content">
+                    <span><img class="img-responsive img-custom" src="../public/images/meFrame.gif"></img></span> 
+                    <span class="contactMe"><h4>Weiwei
+                        <a href="mailto:ww01100110@gmail.com"> Email me</a></h4></span>
+                </div>
             </div>
+            <div class="col-md-5">
+                <div class="transparentBg">                
+                    <h3>Contact me:</h3>
+                    <form action="MAILTO:ww01100110gmail.com" method="post" enctype="text/plain">
+                    Name:<br>
+                    <input type="text" name="name" value="Your Name" onmouseover="this.focus();this.select();"><br>
+                    E-mail:<br>
+                    <input type="text" name="mail" value="Your E-Mail" onmouseover="this.focus();this.select();"><br>
+                    Content:<br>
+                    <textarea name="comment" rows="6" cols="36" onmouseover="this.focus();this.select();" style="resize: none;">Message</textarea><br><br>
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Reset">
+                    </form>           
+                </div>    
+            </div>            
         </div>    
     </div>
 </section>    

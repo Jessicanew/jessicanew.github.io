@@ -19,6 +19,10 @@ h2 {
     color: #464547; 
 }
 
+h3 {
+    color: #464547; 
+}
+
 h4 {
     text-align: center;
 }
@@ -31,7 +35,8 @@ h4 {
 
 .heading {
     text-align: center;
-    padding-top: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .navbar-custom {
@@ -102,10 +107,8 @@ a:visited, a.visited {
 }
 
 .img-custom {
-   /* box-shadow: 2px 2px 2px rgba(0,0,0,0.5);*/
     width: 260px;
-    max-width: 260px;
-    
+    max-width: 260px;    
 }
 
 .text-about {
@@ -130,27 +133,40 @@ a:visited, a.visited {
   padding-top: 80px;
 }
 
+.content-border{
+    border-top: 1px solid #ffffff; 
+    margin: 30px;
+}
+
+.table-display {
+    display: table;
+}
+
 .skillCategory{
-    width: 150px;
-    height:150px;
+    width: 120px;
+    height:120px;
+    margin: auto;
     text-align: center;
     border-radius: 50%;
     background-color: orange;
+    color: #464547; 
+    vertical-align: middle;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
+.icon-custom {
+    width:70px;
+    margin:auto;
 }
 
 .center-content {
   display: table;
-  margin: auto; 
+  margin: auto;
+  margin-top: 30px;
   font-size: 26px; 
-  color: #464547; 
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.content-border{
-    border-top: 1px solid #ffffff; 
-    padding-left: 20px; 
-    padding-right: 20px; 
+  color: #464547;  
+  margin-bottom: 30px;
 }
 
 .contactMe {
@@ -167,9 +183,92 @@ a:visited, a.visited {
     list-style-position: inside;
 }
 
-.pfBlock {
-    min-height: 200px;
+.pfBlock, .pfBlockLast {
+    min-height: 300px;
     min-width: 200px;
-    border: 1px solid #ffffff;
-    border-collapse:collapse;
+    border-right: 1px dashed #ffffff;
+    position:relative;
+    float:left;
+    width: 275px;
+}
+
+.pfBlockLast {
+    border-right: 0px;
+}
+
+#container3 {
+  float: left;
+  width: 100%;
+  background: #99CDFF;/**/
+  overflow: hidden;
+  position: relative; 
+}
+
+#container2 {
+  float: left;
+  width: 100%;
+  background: #99CDFF;
+  position: relative;
+  right: 33%; /*大小等于col3的宽度*/
+  border-right: 1px dashed #fff;
+}
+
+#container1 {
+  float: left;
+  width: 100%;
+  background: #99CDFF;
+  position: relative;
+  right: 34%;/*大小等于col2的宽度*/
+  border-right: 1px dashed #fff;  
+}
+
+#col1 {
+  float:left;
+  width:29%;/*增加了2%的padding，所以宽度减少4%*/
+  position: relative;
+  left: 68%;/*距左边呀增加2%就成72%*/
+  overflow: hidden;
+}
+
+#col2 {
+  float:left;
+  width:30%;/*增加了2%的padding，所以宽度减少4%*/
+  position: relative;
+  left: 72%;/*距左边有三个padding为2%,所以距离变成76%*/
+  overflow: hidden;
+}
+
+#col3 {
+  float:left;
+  width:26%;/*增加了2%的padding，所以宽度减少4%*/
+  position: relative;
+  left: 80%;/*距左边5个padding为2%，所以距离变成80%*/
+  overflow: hidden;
+}
+
+.portfolio-img {
+  width: 95%;
+  opacity: 0.5;
+}
+
+.portfolio-img:hover{
+  opacity:1;
+  transition: opacity 1.2s ease-out;
+  -moz-transition: opacity 1.2s ease-out;
+  -webkit-transition: opacity 1.2s ease-out;
+  -o-transition: opacity 1.2s ease-out;
+}
+
+.transparentBg{
+    background: rgba(255,255,255,0.2);
+    padding-left:30px;
+    padding-top:15px;
+    padding-bottom:15px;
+    margin-left: 0px;
+    margin-top: 30px;
+    width:80%;
+    min-height: 340px;
+    border:1px solid #fff;
+    border-radius: 8px;  
+    color: #464547; 
 }

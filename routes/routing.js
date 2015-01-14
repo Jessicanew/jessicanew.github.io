@@ -12,5 +12,6 @@ angular.module("mainApp").config(function($stateProvider, $urlRouterProvider){
     state('more', {
         url: '/moreAboutMe',
         templateUrl: '/views/about.html'    
-    });     
+    });  
+   
 });
