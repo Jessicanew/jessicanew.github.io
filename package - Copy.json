@@ -1,0 +1,17 @@
+{
+  "name": "myWebsite1",
+  "version": "1.0.0",
+  "description": "my website using AngularJS",
+  "main": "public/js/app.js",
+  "dependencies": {
+    "grunt-cli": "^0.1.1app.js
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "engine": "node >= 0.4.1"
+}
