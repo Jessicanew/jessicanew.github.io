@@ -8,8 +8,5 @@ app.use('/', express.static(__dirname + '/public'));
 
 app.use(bodyParser());
 
-app.get('/', function(req, res) {
-    res.render('index.html');
-});
 
 app.listen(3000);
