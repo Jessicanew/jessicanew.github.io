@@ -15,7 +15,7 @@ var port = process.env.PORT || 3000;
 var host = process.env.HOST || "127.0.0.1";
 
 app.get('/', function(req, res) {
-  res.sendfile('./public/index.html');
+  res.sendfile(__dirname + '/public/index.html');
 });
 
 //app.listen(3000);
